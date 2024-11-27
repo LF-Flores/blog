@@ -10,5 +10,8 @@ tags:
 description: First Post
 ---
 
-# First Post
-Text
+Introductory text
+
+## Table of contents
+
+## First Post
