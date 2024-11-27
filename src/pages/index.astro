@@ -16,7 +16,7 @@ const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
-const socialCount = SOCIALS.filter(social => social.active).length;
+const socialCount = SOCIALS.filter((social) => social.active).length;
 ---
 
 <Layout>
@@ -42,19 +42,19 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        This is my personal website, mainly acting as a blog. I write about any
+        deep thought I have, usually math, physics and/or general science with a
+        big focus on long term vision of humanity and philosophy.
       </p>
       <p>
-        Read the blog posts or check
+        I am the CTO and cofounder of
         <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="https://securitylabs.xyz/"
         >
-          README
-        </LinkButton> for more info.
+          Security Labs
+        </LinkButton>, which is building the permissionless layer for
+        deterministic AI agent behavior in blockchain.
       </p>
       {
         // only display if at least one social link is enabled
@@ -102,7 +102,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
                     frontmatter={data}
                     secHeading={false}
                   />
-                )
+                ),
             )}
           </ul>
         </section>
