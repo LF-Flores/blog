@@ -1,3 +1,9 @@
+## v0.2.1 (2024-11-27)
+
+
+- [🔧config]: Updated snippet and cleaned files
+- [📝draft]: Went back into draft after test
+
 ## v0.2.0 (2024-11-27)
 
 
