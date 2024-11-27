@@ -28,6 +28,6 @@ commitizen:
       - type: input
         name: message
         message: "Write a short, descriptive message about the change:"
-  bump_pattern: '^(feat|fix|ci|build|perf|refactor|my_custom_one)'
-  bump_map: { 🚀post = "MINOR", 📝draft = "PATCH", 🔧config = "PATCH", 🎨style = "PATCH" }
-  schema_pattern: '^(post|draft|config|fix|perf|refactor|style|test|chore|revert|bump|my_custom_one)(\(\S+\))?\:?\s.*'
+    bump_pattern: '^(🚀post|📝draft|🔧config|🎨style|feat|fix|ci|build|perf|refactor|my_custom_one)'
+    bump_map: { 🚀post = "MINOR", 📝draft = "PATCH", 🔧config = "PATCH", 🎨style = "PATCH" }
+    schema_pattern: '^(post|draft|config|fix|perf|refactor|style|test|chore|revert|bump|my_custom_one)(\(\S+\))?\:?\s.*'
