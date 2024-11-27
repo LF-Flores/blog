@@ -152,4 +152,10 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
   },
+  {
+    name: "Farcaster",
+    href: "https://warpcast.com/flancaster",
+    linkTitle: `${SITE.title} on Farcaster`,
+    active: true,
+  },
 ];
