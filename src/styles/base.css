@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Removes dark mode LaTeX clear font */
+.prose {
+  --tw-prose-body: unset;
+}
+
 @layer base {
   :root,
   html[data-theme="light"] {
@@ -10,15 +15,15 @@
     --color-accent: 0, 108, 172;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
-    --color-border: 236, 233, 233;
+    --color-border: 236, 233, 233; 
   }
   html[data-theme="dark"] {
-    --color-fill: 33, 39, 55;
+    --color-fill: 33, 39, 55; 
     --color-text-base: 234, 237, 243;
-    --color-accent: 255, 107, 1;
+    --color-accent:  138, 43, 226;
     --color-card: 52, 63, 96;
     --color-card-muted: 138, 51, 2;
-    --color-border: 171, 75, 8;
+    --color-border: 111, 45, 168;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -45,7 +50,7 @@
     @apply inline-block h-6 w-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent/50 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded prose-code:bg-skin-card/75 prose-code:p-1 prose-code:before:!content-none prose-code:after:!content-none prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:!my-2 prose-img:mx-auto prose-img:border-2 prose-img:border-skin-line prose-hr:!border-skin-line;
+    @apply prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent/50 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded prose-code:bg-skin-card/75 prose-code:p-1 prose-code:before:!content-none prose-code:after:!content-none prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:!my-2 prose-img:mx-auto prose-img:border-2 prose-img:border-skin-line prose-hr:!border-skin-line prose-h1:!text-skin-base prose-h2:!text-skin-base prose-h3:!text-skin-base prose-h4:!text-skin-base prose-h5:!text-skin-base prose-h6:!text-skin-base prose-kbd:!text-skin-base prose-figure:!text-skin-base prose-em:!text-skin-base prose-code:!text-skin-base prose-pre:!text-skin-base prose-hr:!text-skin-base;
   }
   .prose a {
     @apply break-words hover:!text-skin-accent;

@@ -9,11 +9,11 @@ export const SITE: Site = {
   ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 4,
-  postPerPage: 3,
+  postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+    url: "https://github.com/LF-Flores/blog/edit/main/src/content/blog",
     text: "Suggest Changes",
     appendFilePath: true,
   },
