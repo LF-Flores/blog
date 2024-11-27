@@ -29,4 +29,5 @@ commitizen:
         name: message
         message: "Write a short, descriptive message about the change:"
     schema_pattern: '^\[(🚀post|📝draft|🔧config|🎨style)\]:\s.*'
-    bump_map: { 🚀post = "MINOR", 📝draft = "PATCH", 🔧config = "PATCH", 🎨style = "PATCH" }
+    bump_pattern: '^\[(🚀post|📝draft|🔧config|🎨style)\]:'
+    bump_map: { 🚀post: "MINOR", 📝draft: "PATCH", 🔧config: "PATCH", 🎨style: "PATCH" }
