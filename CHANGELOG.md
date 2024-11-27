@@ -1,3 +1,9 @@
+## v0.3.0 (2024-11-27)
+
+
+- [🚀post]: Updated intro
+- [🔧config]: Added farcaster to socials
+
 ## v0.2.1 (2024-11-27)
 
 
