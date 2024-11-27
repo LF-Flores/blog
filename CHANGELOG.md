@@ -1,3 +1,10 @@
+## v0.3.1 (2024-11-27)
+
+
+- [🔧config]: Added comment box with giscus
+- [🔧config]: fix branch name
+- [🔧config]: disabled fly automatic deployment on push for the moment being
+
 ## v0.3.0 (2024-11-27)
 
 
