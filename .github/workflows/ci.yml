@@ -9,25 +9,27 @@ on:
 jobs:
   build:
     name: Code standards & build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04  # Updated to match the official example
     timeout-minutes: 3
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [18]
 
     steps:
       - name: "☁️ Checkout repository"
         uses: actions/checkout@v4
+
+      - name: "📦 Install pnpm"
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: "🔧 Setup Node.js ${{ matrix.node-version }}"
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
-
-      - name: "📦 Setup pnpm"
-        run: npm install -g pnpm
 
       - name: "📦 Install dependencies"
         run: pnpm install
