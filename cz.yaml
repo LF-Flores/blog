@@ -1,8 +1,30 @@
 ---
 commitizen:
-  name: cz_conventional_commits
+  name: cz_customize
   tag_format: v$version
   update_changelog_on_bump: true
   version_provider: npm
   version_scheme: semver
   use_shortcuts: true
+  customize:
+    message_template: "[{{type}}]: {{message}}"
+    questions:
+      - type: list
+        name: type
+        message: "Choose the type of change:"
+        choices:
+          - value: 🚀post
+            name: "🚀post: Finish a new post"
+            key: p
+          - value: 📝draft
+            name: "📝draft: Partial work on a draft post"
+            key: d
+          - value: 🔧config
+            name: "🔧config: Updated some project config"
+            key: c
+          - value: 🎨style
+            name: "🎨style: Visual change"
+            key: s
+      - type: input
+        name: message
+        message: "Write a short, descriptive message about the change:"
