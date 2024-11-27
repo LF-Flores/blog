@@ -1,4 +1,5 @@
 import type { Site, SocialObjects } from "./types";
+import type { GiscusProps } from "@giscus/react";
 
 export const SITE: Site = {
   website: "https://felipeflores.xyz/", // replace this with your deployed domain
@@ -29,6 +30,19 @@ export const LOGO_IMAGE = {
   svg: true,
   width: 216,
   height: 46,
+};
+
+export const GISCUS: GiscusProps = {
+  repo: "LF-Flores/blog",
+  repoId: "R_kgDONVckSQ",
+  category: "Announcements",
+  categoryId: "DIC_kwDONVckSc4CkpEU",
+  mapping: "pathname",
+  reactionsEnabled: "0",
+  emitMetadata: "0",
+  inputPosition: "bottom",
+  lang: "en",
+  loading: "lazy",
 };
 
 export const SOCIALS: SocialObjects = [
