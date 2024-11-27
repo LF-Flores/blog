@@ -1,3 +1,9 @@
+## v0.2.0 (2024-11-27)
+
+
+- [🚀post]: Testing new post to check automatic social card
+- [🔧config]: Deleted post and added table of content to draft
+
 ## v0.1.5 (2024-11-27)
 
 
